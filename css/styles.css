@@ -38,6 +38,7 @@ body {
 	background: var(--clr-dark-blue);
 	border-radius: 10px 100px 10px 10px;
 	width: 85%;
+	max-width: 37rem;
 	padding: 3em;
 	margin: 0 auto 2rem;
 }
@@ -61,9 +62,6 @@ body {
 	width: 85%;
 	height: auto;
 	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin: 0 auto;
 	padding: 1em 1em 3em;
 }
@@ -73,6 +71,7 @@ body {
 	flex-direction: column;
 	text-align: center;
 	width: 90%;
+	margin: 0 auto;
 }
 span {
 	font-weight: bold;
@@ -98,7 +97,7 @@ span {
 	justify-content: flex-end;
 }
 .white-bar {
-	width: 5%;
+	width: 1rem;
 	height: 10px;
 	border-radius: 10px;
 	background: white;
@@ -114,6 +113,7 @@ span {
 	color: rgba(0, 0, 0, 0.473);
 	border-radius: 10px;
 	font-weight: bold;
+	text-align: center;
 	width: 50%;
 	max-width: 23rem;
 	position: absolute;
@@ -133,4 +133,48 @@ span {
 /* Media Query */
 
 @media screen and (min-width: 870px) {
+	body {
+		background-color: var(--clr-vDark-blue);
+		background-image: url(/images/bg-desktop.png);
+		background-position: bottom;
+		background-size: 100% 50%;
+	}
+	.container {
+		display: flex;
+		gap: 1rem;
+		width: 90%;
+		max-width: 100rem;
+		justify-content: center;
+	}
+	.top {
+		margin-bottom: 0;
+	}
+	.bottom {
+		height: 15rem;
+		padding: 0 2em;
+		align-self: flex-end;
+		max-width: 50rem;
+	}
+	.bottom-content {
+		margin-top: 3rem;
+		text-align: left;
+	}
+	.remaining {
+		clip-path: polygon(
+			0% 0%,
+			100% 0%,
+			100% 75%,
+			100% 75%,
+			100% 100%,
+			88% 75%,
+			0% 75%
+		);
+		border-radius: 10px 10px 0 10px;
+		position: relative;
+		top: -18rem;
+		left: 80%;
+		height: 9rem;
+		text-align: center;
+		max-width: 17rem;
+	}
 }
