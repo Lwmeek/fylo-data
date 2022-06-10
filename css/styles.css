@@ -20,12 +20,16 @@ body {
 	font-family: "Raleway", sans-serif;
 	background-image: url(/images/bg-mobile.png);
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: 75%;
 	background-size: cover;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.container {
+	width: 100%;
+	max-width: 44rem;
 }
 
 /* Top */
@@ -35,6 +39,7 @@ body {
 	border-radius: 10px 100px 10px 10px;
 	width: 85%;
 	padding: 3em;
+	margin: 0 auto 2rem;
 }
 .logo {
 	margin-bottom: 3rem;
@@ -110,10 +115,12 @@ span {
 	border-radius: 10px;
 	font-weight: bold;
 	width: 50%;
+	max-width: 23rem;
 	position: absolute;
-	top: 13rem;
-	left: 9.5rem;
+	top: 64rem;
+	left: 50%;
 	font-size: 1.2rem;
+	transform: translateX(-50%);
 }
 .special {
 	font-weight: bold;
@@ -121,4 +128,9 @@ span {
 	color: var(--clr-vDark-blue);
 	align-self: center;
 	margin-right: 1rem;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 870px) {
 }
