@@ -20,19 +20,34 @@ body {
 	font-family: "Raleway", sans-serif;
 	background-image: url(/images/bg-mobile.png);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom;
 	background-size: cover;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Top */
 
-
-
-
-
-
-
+.top {
+	background: var(--clr-dark-blue);
+	border-radius: 10px 100px 10px 10px;
+	width: 85%;
+	padding: 3em;
+}
+.logo {
+	margin-bottom: 3rem;
+}
+.icons {
+	display: flex;
+	gap: 1.5rem;
+}
+.icons img {
+	background: var(--clr-vDark-blue);
+	padding: 1.2rem;
+	border-radius: 10px;
+}
 
 /* Bottom */
 
